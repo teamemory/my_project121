@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" href="../css/login.css" />
+	 <link rel="stylesheet" href="../css/shop_detail.css">
+  <title>login</title>
+  <style>
+		label.error{
+/*			border:1px solid red;*/
+/*			background:pink;*/
+			color:red;
+/*			padding: 0 12px;*/
+		}
+  </style>
+ </head>
+ <body>
+	<!-- 页面顶部 -->
+	<header id="top">
+		<div>
+			<ul>
+				<li class="my_zh">我的账户
+					<!-- 弹出菜单 -->
+					<ul>
+						<li>我的订单</li>
+						<li>我的积分</li>
+						<li>我的优惠卷</li>
+						<li>我的收藏</li>
+						<li>我的评价</li>
+					</ul>
+				</li>
+				<li>我的购物车</li>
+				<li>我的收藏</li>
+				<li>我的站内信</li>
+				<li>积分中心</li>
+				<li>Global&nbsp; Site</li>
+				<li class="weixin">
+					关注我们&nbsp;
+					<a href="#" class="d1">
+						<img src="../images/1258dcb67b800b6af51b965e93125631a0fe6e1e.png" alt="" />&nbsp;
+						<img class=weibo src="../images/072b1d0568da15dca7f2e550962c8961400d4a5b.jpg" alt="" />
+					</a>
+					<a href="#" class="d2">
+						<img src="../images/db683af04c592c78e284bfb777f3b705bff4493a.png" alt="" />
+						<img class=weixin src="../images/a2843e03f56f75bd4ffd265efdd2e88ecc2cb63c.jpg" alt="" />
+					</a>
+				</li>
+				
+			</ul>
+			<p>欢迎光临莎莎网！&nbsp;&nbsp;&nbsp;<a href="login.html">登录</a>或<a href="register.html">免费注册</a></p>
+		</div>
+	</header>
+	<!-- logo -->
+	<div id=lg>
+		<a href="../shasha.html">
+			<img src="../images/de63e200c54345ad02ff3d6de8ce4eb97fafdf87.png" alt="" />
+		</a>
+	</div>
+	<!-- 登录栏及左侧图片 -->
+	<div id="main">
+		<!-- 图片 -->
+		<p>
+			<a href="../shasha.html"><img src="../images/1a8530223d36ab95d7b07d8361dbc38d4ab7f7e2.jpg" alt="" /></a>
+			
+		</p>
+		<!-- 右侧登录栏 -->
+		<div id="login">
+			<!-- 用户登录 -->
+			<div class="d1">
+				<p>还没有莎莎账号？<a href="register.html">立即注册</a></p>
+				用户登录
+			</div>
+			<!-- 登录账号和密码 -->
+			<div class="d2">
+				<p><input type="text" placeholder="邮箱手机" name="mail"/></p>
+				<p><input type="password" placeholder="填写密码" name="upwd"/></p>
+			</div>
+			<!-- 记住我 -->
+			<div id="jizhuwo">
+				<input type="checkbox" />&nbsp;&nbsp
+				记住我&nbsp;&nbsp;&nbsp;&nbsp;<span>忘记密码？</span>
+			</div>
+			<!-- 登录按钮 -->
+			<div id="denglu_btn">
+				<button>登录</button>
+			</div>
+			<!-- 第三方账号登录及图标 -->
+			<div id="the_third">
+				<!-- 文字 -->
+				<p>第三方账号登录</p>
+				<!-- 其他登录三种方式 -->
+				<ul>
+					<li>
+						<a href="#"><img src="../images/login01.jpg" alt="" />
+						QQ登录</a>
+					</li>
+					<li>
+						<a href="#"><img src="../images/login02.jpg" alt="" />
+						微博登录</a>
+					</li>
+					<li>
+						<a href="#"><img src="../images/login03.jpg" alt="" />
+						支付宝登录</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/login.js"></script>
+ </body>
+</html>

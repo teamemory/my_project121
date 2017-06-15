@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="../css/shoppingList.css">
+	 <link rel="stylesheet" href="../css/animate.css"/>
+
+ </head>
+ <body>
+    <!-- 页面顶部 -->
+	<header id="top">
+		<div>
+			<ul>
+				<li class="my_zh">我的账户
+					<!-- 弹出菜单 -->
+					<ul>
+						<li>我的订单</li>
+						<li>我的积分</li>
+						<li>我的优惠卷</li>
+						<li>我的收藏</li>
+						<li>我的评价</li>
+					</ul>
+				</li>
+				<li>我的购物车</li>
+				<li>我的收藏</li>
+				<li>我的站内信</li>
+				<li>积分中心</li>
+				<li>Global&nbsp; Site</li>
+				<li>
+					关注我们
+				</li>
+				
+			</ul>
+			<p>欢迎光临莎莎网！&nbsp;&nbsp;&nbsp;<a href="html/login.html">登录</a>或<a href="html/register.html">免费注册</a></p>
+		</div>
+	</header>
+	<!-- logo和搜索框 -->
+	<div id="top_main">
+		<!-- logo -->
+		<a class="lf" href="../shasha.html">
+			<img src="../images/0e937ac6e954f773488d653491492d57f5cb95b8.png" alt="" />
+		</a>
+		<p class="rt">
+			<img src="../images/95843dbce68abfc1ed3da86ca3b111acc9fd2a0d.png" alt="">
+			<img src="../images/6933df9485adf7984a973b65211cb18341a2e169.png" alt="">
+			<img src="../images/11c9171e69c2f78235e7bafe355e41d81be8a324.png" alt="">
+		</p>
+	</div>
+	<!-- 商品详情及结账 -->
+	<div id="bgcolor">
+		<div class="sp">
+			<img src="../images/2016-12-04_170440.png" alt=""/>
+		</div>
+	    <div id="main">
+			<!-- 满249优惠文字 -->
+			<p>
+				香港直送商品订单满<span>¥249</span>包邮
+			</p>
+			<!-- 香港直送-->
+			<table cellspacing="0" class="tb1">
+				<thead>
+				<tr id="r1">
+					<td class="d1">
+						香港直送
+					</td>
+					<td class="d2">
+						商品名称
+					</td>
+					<td>
+						单价
+					</td>
+					<td>
+						数量
+					</td>
+					<td>
+						小计
+					</td>
+					<td>
+						操作
+					</td>
+				</tr>
+				</thead>
+				<tbody class="gouwujiesuan">
+				<!--<tr id="r2">-->
+					<!--<td>-->
+						<!--<img src="../images/468553c9d20a85c58e4e784e4acbcf2a3feabd55.jpg" alt="">-->
+					<!--</td>-->
+					<!--<td class="d2">-->
+						<!--<a href="#">SNP 精华面膜系列 金丝燕窝深层保湿面膜</a><br>10片-->
+					<!--</td>-->
+					<!--<td>¥68.0</td>-->
+					<!--<td>-->
+						<!--<button onclick="calc(this)">-</button>-->
+					    <!--<span>1</span>-->
+					    <!--<button onclick="calc(this)">+</button>-->
+				    <!--</td>-->
+					<!--<td>-->
+						<!--<b>¥68.0</b>-->
+					<!--</td>-->
+					<!--<td>-->
+						<!--<i>删除</i>-->
+					<!--</td>-->
+				<!--</tr>-->
+				<tbody>
+			</table>
+
+			<!-- 已享受的优惠 -->
+			<table>
+				<tr id="r1">
+					<td class="d1">
+						已享受的优惠
+					</td>
+					<td class="d2">
+						优质项目
+					</td>
+					<td>
+						
+					</td>
+					<td>
+						
+					</td>
+					<td>
+						
+					</td>
+					<td>
+					
+					</td>
+				</tr>
+				<tr id="r3">
+					<td>
+					</td>
+					<td class="d2">
+						<span>订单促销</span>满¥249免运费
+					</td>
+					<td>
+						
+					</td>
+					<td>
+						
+					</td>
+					<td>
+						
+					</td>
+					<td>
+						
+					</td>
+				</tr>
+			</table>
+			<!-- 结账 -->
+			<div id="jiezhang">
+				<div class="lf">
+					<a href="#">继续购物</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">清空购物车</a>
+				</div>
+				<div class="rt">
+					共有<b class="msk"></b>件商品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>商品应付金额&nbsp;&nbsp; <i class="t_price"></i> </span>
+					<button id="bt-gotobuy">
+						结帐
+					</button>
+				</div>
+				<div style=clear:"both";></div>
+			</div>
+
+		</div>
+	</div>
+	<!-- 加购区 -->
+	<div id="bg_color">
+		<div id="addbuy">
+			<!-- 加购区标题 -->
+			<p>加购区</p>
+			<!-- 分类，20,20-50， -->
+			<div class="flash">
+				<ul>
+					<li><a href="#">20元以下</a></li>
+					<li><a href="#">20-50元</a></li>
+					<li><a href="#">50-100元</a></li>
+				</ul>
+			</div>
+			<!-- 加购区内容 -->
+			<div class="add_detail">
+				<!-- 四大加购内容 -->
+				<div>
+					<!-- 第一块 -->
+					<div class="d1">
+						<!-- 图片 -->
+						<img src="../images/1e537a256436d67a74764c74393d48e613aea157.jpg" alt="" />
+						<!-- 价格 -->
+						<div class="price">
+							<span class="price">
+								¥5.0
+							</span>
+							<span class="dis">
+								¥8.0
+							</span>
+							<span class="count">
+								6.3折
+							</span>
+						</div>
+						<!-- 名称 -->
+						<div id="add_name">
+							<b>FRESH UP</b>
+							<h5>棉花棒</h5>
+						</div>
+						<!-- 数量 -->
+						<div class="number">
+							100支
+						</div>
+						<!-- 加入购物车 -->
+						<div class="shop_car">
+							<button>加入购物车</button>
+						</div>
+					</div>
+					<!--第二块  -->
+					<div class="d1">
+						<!-- 图片 -->
+						<img src="../images/13e519d8eabc19ef7d159428135b6ffa919b0235.jpg" alt="" />
+						<!-- 价格 -->
+						<div class="price">
+							<span class="price">
+								¥5.0
+							</span>
+							<span class="dis">
+								¥8.0
+							</span>
+							<span class="count">
+								6.3折
+							</span>
+						</div>
+						<!-- 名称 -->
+						<div id="add_name">
+							<b>FRESH UP</b>
+							<h5>棉花棒</h5>
+						</div>
+						<!-- 数量 -->
+						<div class="number">
+							100支
+						</div>
+						<!-- 加入购物车 -->
+						<div class="shop_car">
+							<button>加入购物车</button>
+						</div>
+					</div>
+					<!-- 第三块 -->
+					<div class="d1">
+						<!-- 图片 -->
+						<img src="../images/7942af0a80e8af2bbd7f625b999af3a025d6809f.jpg" alt="" />
+						<!-- 价格 -->
+						<div class="price">
+							<span class="price">
+								¥5.0
+							</span>
+							<span class="dis">
+								¥8.0
+							</span>
+							<span class="count">
+								6.3折
+							</span>
+						</div>
+						<!-- 名称 -->
+						<div id="add_name">
+							<b>FRESH UP</b>
+							<h5>棉花棒</h5>
+						</div>
+						<!-- 数量 -->
+						<div class="number">
+							100支
+						</div>
+						<!-- 加入购物车 -->
+						<div class="shop_car">
+							<button>加入购物车</button>
+						</div>
+					</div>
+					<!-- 第四块 -->
+					<div class="d1">
+						<!-- 图片 -->
+						<img src="../images/524c138e8e70f3c58dfb66ee8c114445834ba121.jpg" alt="" />
+						<!-- 价格 -->
+						<div class="price">
+							<span class="price">
+								¥5.0
+							</span>
+							<span class="dis">
+								¥8.0
+							</span>
+							<span class="count">
+								6.3折
+							</span>
+						</div>
+						<!-- 名称 -->
+						<div id="add_name">
+							<b>FRESH UP</b>
+							<h5>棉花棒</h5>
+						</div>
+						<!-- 数量 -->
+						<div class="number">
+							100支
+						</div>
+						<!-- 加入购物车 -->
+						<div class="shop_car">
+							<button>加入购物车</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 页面尾部 -->
+	<footer id="foot">
+			<!-- 新手上路 -->
+			<div>
+				<!-- 右侧二维码 -->
+				<div id="qrcode">
+					<a href=""><img src="../images/dcb98cec3f24117a4f2c7f9bebf2914b353b03c9.jpg" alt="" /></a>
+					<a href=""><img src="../images/dcb98cec3f24117a4f2c7f9bebf2914b353b03c9.jpg" alt="" /></a>
+				</div>
+				<!-- 左侧新手上路 -->
+				<div id="new">
+					<!-- 文本 -->
+					<ul>
+						<li class="r1"><a href="#">新手上路</a></li>
+						<li><a href="#">购物流程</a></li>	
+						<li><a href="#">优惠说明</a></li>
+						<li><a href="#">常见问题</a></li>	
+						<li><a href="#">联络我们</a></li>	
+					</ul>
+					<ul>
+						<li class="r1"><a href="#">付款方式</a></li>
+						<li><a href="#">在线支付</a></li>	
+						<li><a href="#">积分支付</a></li>	
+					</ul>
+					<ul>
+						<li class="r1"><a href="#">配送方式</a></li>
+						<li><a href="#">配送说明</a></li>	
+						<li><a href="#">追踪订单</a></li>
+						</ul>
+					<ul>
+						<li class="r1"><a href="#">售后服务</a></li>
+						<li><a href="#">正品保证</a></li>	
+						<li><a href="#">价格承诺</a></li>
+						<li><a href="#">20日退换保证</a></li>	
+						<li><a href="#">追踪程序</a></li>
+						<li><a href="#">更改订单</a></li>	
+					</ul>
+					<ul>
+						<li class="r1"><a href="#">莎莎会员</a></li>
+						<li><a href="#">积分奖赏</a></li>	
+						<li><a href="#">会员计划</a></li>
+					</ul>
+					<!-- 图片底部 -->
+					<a href="#"><img src="../images/2ba94eca9ab1e31bff8edcc9a4d60e764f051972.jpg" alt="" /></a>
+				</div>
+			<div>
+			<!-- 黑色底纹底栏 -->
+	</footer>
+	<div id="lianxi">
+				<!-- 上 -->
+					<p>
+						<a href="#">关于莎莎</a><a href="#">使用条款</a><a href="#">隐私策略</a><a href="#">批发服务</a><a href="#">招商合作</a><a href="#">帮助中心</a><a href="#">港澳店铺推广</a><a href="#">人才招聘</a><a href="#">联络我们&nbsp;&nbsp;其他送货地区</a>
+					</p>
+					<h4>Copyright 2000-2016 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员</h4>
+				<!-- 下 -->
+	</div>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/shoppingList.js"></script>
+ </body>
+</html>

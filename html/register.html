@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" href="../css/register.css" />
+  <title>register</title>
+  <style>
+	label.error{
+		color:red;
+	}
+  </style>
+ </head>
+ <body>
+	<!-- 页面顶部 -->
+	<header id="top">
+		<div>
+			<ul>
+				<li class="my_zh">我的账户
+					<!-- 弹出菜单 -->
+					<ul>
+						<li>我的订单</li>
+						<li>我的积分</li>
+						<li>我的优惠卷</li>
+						<li>我的收藏</li>
+						<li>我的评价</li>
+					</ul>
+				</li>
+				<li>我的购物车</li>
+				<li>我的收藏</li>
+				<li>我的站内信</li>
+				<li>积分中心</li>
+				<li>Global&nbsp; Site</li>
+				<li class="weixin">
+					关注我们&nbsp;
+					<a href="#" class="d1">
+						<img src="../images/1258dcb67b800b6af51b965e93125631a0fe6e1e.png" alt="" />&nbsp;
+						<img class=weibo src="../images/072b1d0568da15dca7f2e550962c8961400d4a5b.jpg" alt="" />
+					</a>
+					<a href="#" class="d2">
+						<img src="../images/db683af04c592c78e284bfb777f3b705bff4493a.png" alt="" />
+						<img class=weixin src="../images/a2843e03f56f75bd4ffd265efdd2e88ecc2cb63c.jpg" alt="" />
+					</a>
+				</li>
+				
+			</ul>
+			<p>欢迎光临莎莎网！&nbsp;&nbsp;&nbsp;<a href="login.html">登录</a>或<a href="register.html">免费注册</a></p>
+		</div>
+	</header>
+	<!-- logo -->
+	<div id=lg>
+		<a href="../shasha.html">
+			<img src="../images/de63e200c54345ad02ff3d6de8ce4eb97fafdf87.png" alt="" />
+		</a>
+	</div>
+	<!-- 注册栏 -->
+	<div id=main>
+		<!-- 左侧图片 -->
+		<p>
+			<img src="../images/1a8530223d36ab95d7b07d8361dbc38d4ab7f7e2.jpg" alt="" />
+		</p>
+		<!-- 右侧注册栏 -->
+		<form id="register">
+			<!-- 注册账号 -->
+			<div class="d1">
+				<p>已有莎莎账号？<a href="login.html">立即登录</a></p>
+				注册账号
+			</div>
+			<!-- 账户及密码 -->
+			<div id="name_psd">
+				<!-- 账号 -->
+				<p><input type="text" placeholder="请输入邮箱手机号,最少5个字符" name="uname"/></p>
+				<!-- 输入密码 -->
+				<p><input type="password" placeholder="请输入密码6-16位字母和数字的组合" id="upwd1" name="upwd1"/></p>
+				<!-- 确认密码 -->
+				<p><input type="password" placeholder="再次确认密码" name="upwd2"/></p>
+			</div>
+			<!-- 验证码 -->
+			<div id="yanzhengma">
+				<input type="text"placeholder="填写验证码" name="checkcode" />
+			</div>
+			<!-- 同意条款 -->
+			<div id="tiaokuan">
+				<input type="checkbox" />&nbsp;&nbsp
+				同意&nbsp; 莎莎网使用条款&nbsp; 和 &nbsp;隐私保护政策
+			</div>
+			<!-- 注册按钮 -->
+			<div id="zhuce_btn">
+				<button type="submit">注册</button>
+			</div>
+		</form>
+	</div>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script>
+		$("#register").validate({
+			rules:{
+				uname:"required",
+				upwd1:{required:true,rangelength:[6,16]},
+				upwd2:{equalTo:"#upwd1"},
+				checkcode:"required"
+			},
+			messages:{
+				uname:"用户名不能为空",
+				upwd1:"密码是6-16个字符",
+				upwd2:"两次密码不一致",
+				checkcode:"验证码不能为空"
+			}
+		});
+	</script>
+ </body>
+</html>
